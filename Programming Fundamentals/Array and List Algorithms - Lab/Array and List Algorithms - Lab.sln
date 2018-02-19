@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "le test", "le test\le test.csproj", "{01D933C6-8914-4F7D-B4B2-8A20AB4DB1FF}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Array Contains Element", "01. Array Contains Element\01. Array Contains Element.csproj", "{AE18887F-62F2-4120-8C76-C5782B26FFBC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Smallest Element in Array", "02. Smallest Element in Array\02. Smallest Element in Array.csproj", "{965D6106-5F23-4F67-AD7F-5C0730AE3EAB}"
@@ -23,10 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{01D933C6-8914-4F7D-B4B2-8A20AB4DB1FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{01D933C6-8914-4F7D-B4B2-8A20AB4DB1FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{01D933C6-8914-4F7D-B4B2-8A20AB4DB1FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{01D933C6-8914-4F7D-B4B2-8A20AB4DB1FF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AE18887F-62F2-4120-8C76-C5782B26FFBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AE18887F-62F2-4120-8C76-C5782B26FFBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE18887F-62F2-4120-8C76-C5782B26FFBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
