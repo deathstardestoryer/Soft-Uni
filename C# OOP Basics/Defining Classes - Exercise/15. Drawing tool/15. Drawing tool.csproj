@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{261E3465-DFE3-4A3D-9889-9C5619ADDFFD}</ProjectGuid>
+    <ProjectGuid>{D8485985-AFF5-4FBB-BE6D-CEB57B433049}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_11.Pokemon_Trainer</RootNamespace>
-    <AssemblyName>_11.Pokemon_Trainer</AssemblyName>
+    <RootNamespace>_15.Drawing_tool</RootNamespace>
+    <AssemblyName>_15.Drawing_tool</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,10 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pokemon Trainer.cs" />
-    <Compile Include="Pokemon.cs" />
+    <Compile Include="CorDraw.cs" />
+    <Compile Include="Drawing tool.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Trainer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

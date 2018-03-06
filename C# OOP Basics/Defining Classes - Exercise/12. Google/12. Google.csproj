@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{261E3465-DFE3-4A3D-9889-9C5619ADDFFD}</ProjectGuid>
+    <ProjectGuid>{1E1F5CC1-08DE-44EC-BE5B-EAD1EA5FA699}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_11.Pokemon_Trainer</RootNamespace>
-    <AssemblyName>_11.Pokemon_Trainer</AssemblyName>
+    <RootNamespace>_12.Google</RootNamespace>
+    <AssemblyName>_12.Google</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,10 +42,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pokemon Trainer.cs" />
+    <Compile Include="Car.cs" />
+    <Compile Include="Children.cs" />
+    <Compile Include="Company.cs" />
+    <Compile Include="Google.cs" />
+    <Compile Include="Parents.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="Pokemon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Trainer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
