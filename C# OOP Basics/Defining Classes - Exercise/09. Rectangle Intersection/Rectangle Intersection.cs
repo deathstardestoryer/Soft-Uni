@@ -1,31 +1,45 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace _09.Rectangle_Intersection
+{
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
 
-
-    class Program
+    public class StartUp
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-        var initialInput = Console.ReadLine().Split(' ').Select(int.Parse).ToList();
-        int numberOfRectangles = initialInput[0];
-        int numberOfIntersections = initialInput[1];
-        var allRectangles = new List<Rectangle>();
+            var firstLine = Console.ReadLine().Split();
 
-        for (int i = 0; i < numberOfRectangles; i++)
-        {
-            var separated = Console.ReadLine().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).ToList();
-            allRectangles.Add(new Rectangle(separated[0], double.Parse(separated[1]), double.Parse(separated[2]), double.Parse(separated[3]), double.Parse(separated[4])));
+            var rectangles = SetRectangles(int.Parse(firstLine[0]));
+            CheckIntersections(int.Parse(firstLine[1]), rectangles);
         }
-        var pairsToIntersect = Console.ReadLine().Split(new[] { ' ' },StringSplitOptions.RemoveEmptyEntries).ToList();
-        var rectangle1 = allRectangles.Where(r => r.id == pairsToIntersect[0]).ToList();
-        var rectangle2 = allRectangles.Where(r => r.id == pairsToIntersect[1]).ToList();
-        
 
+        private static void CheckIntersections(int numberOfIntersectionChecks, Queue<Rectangle> rectangles)
+        {
+            while (numberOfIntersectionChecks > 0)
+            {
+                var pair = Console.ReadLine().Split();
+                var firstRect = rectangles.Where(r => r.Id == pair[0]).FirstOrDefault();
+                var secondRect = rectangles.Where(r => r.Id == pair[1]).FirstOrDefault();
 
+                Console.WriteLine(firstRect.IsThereIntersection(secondRect) ? "true" : "false");
+
+                numberOfIntersectionChecks--;
+            }
+        }
+
+        private static Queue<Rectangle> SetRectangles(int numberOfRectangles)
+        {
+            var rectangles = new Queue<Rectangle>(numberOfRectangles);
+
+            while (rectangles.Count < numberOfRectangles)
+            {
+                var input = Console.ReadLine().Split();
+                rectangles.Enqueue(new Rectangle(input[0], double.Parse(input[1]),
+                    double.Parse(input[2]), double.Parse(input[3]), double.Parse(input[4])));
+            }
+
+            return rectangles;
+        }
     }
-   
-    }
-
+}
